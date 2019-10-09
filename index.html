@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USGS Earthquake Analysis - Step 1</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid mb-0 pb-4">
+        <div class="container">
+            <h1 class="display-4">USGS Earthquake Analysis</h1>
+            <p class="lead">Seismic and Tectonic Plate Activity</p>
+            <hr class="my-2">
+            <!-- <p>Click below to be taken to the USGS site.</p> -->
+            <p class="lead">
+                <a class="btn btn-dark btn-sm" href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank" role="button">USGS Site</a>
+            </p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <!-- <a class="navbar-brand btn btn-light btn-sm text-dark" href="#"><i class="fa fa-home" style="line-height:1.65;"></i></a> -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="btn btn-light btn-sm" href="javascript:;">
+                    <i class="fa fa-home" style="line-height:1.45;" id="home" data-zoom="3" data-position="30.09,-40.71"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark btn-sm" style="padding: 0.5px" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light btn-sm" href="javascript:;" onclick="$('.leaflet-control-layers-selector')[0].click()">Light</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark btn-sm" style= "padding: 0.5px" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light btn-sm" href="javascript:;" onclick="$('.leaflet-control-layers-selector')[1].click()">Dark</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark btn-sm" style="padding: 0.5px" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light btn-sm" href="javascript:;"
+                    onclick="$('.leaflet-control-layers-selector')[2].click()">Streets</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark btn-sm" style="padding: 0.5px" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light btn-sm" href="javascript:;"
+                    onclick="$('.leaflet-control-layers-selector')[3].click()">Outdoors</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark btn-sm" style="padding: 0.5px" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light btn-sm" href="javascript:;"
+                    onclick="$('.leaflet-control-layers-selector')[4].click()">Satellite</a>
+            </li>
+        </ul>
+    </nav>    
+
+    <!-- The div that holds our map -->
+    <div id="map"></div>
+    <footer class="page-footer font-small bg-dark">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-light py-1">© 2019 Kit Rana Rutgers Data Science</div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <!-- D3 JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/plates.js"></script>
+    <script type="text/javascript" src="static/js/quakes.js"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
+    <!-- <script type="text/javascript" src="static/js/customCtrl.js"></script> -->
+
+    
+</body>
+
+
+</html>

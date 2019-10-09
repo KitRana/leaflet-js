@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.legend {
+	line-height: 18px;
+  color: #555;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  opacity: 0.95;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.8;
+}
+
+/* .jumbotron {
+  height: 200px;
+} */
+
+/* .home-btn {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: none;
+  font-size: 24px;
+  background-position: 50% 50%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Home_font_awesome.svg/600px-Home_font_awesome.svg.png);
+  background-color: white;
+} */
+
